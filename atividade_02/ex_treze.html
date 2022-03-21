@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* Escreva um programa para ler as notas das duas avaliações de um aluno no semestre, calcular e escrever a média semestral e a seguinte mensagem: PARABÉNS! Você foi aprovado! somente se o aluno foi aprovado (considere 6.0 a média mínima para aprovação e 4 notas informadas).*/
+
+        var nota_01 = parseInt(prompt("Informe sua nota"));
+        var nota_02 = parseInt(prompt("Informe outra nota"));
+        var nota_03 = parseInt(prompt("Informe mais uma nota"));
+        var nota_04 = parseInt(prompt("Informe a ultima nota"));
+        var notas = ((nota_01 + nota_02 + nota_03 + nota_04) / 4);
+
+        if(notas == 6){
+            alert("PARABÉNS! Você foi aprovado!")
+        }
+
+        if(notas > 6){
+            alert("PARABÉNS! Você foi aprovado!")
+        }
+
+        if(notas < 6){
+            alert("Infelizmente, você foi reprovado!")
+        }
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

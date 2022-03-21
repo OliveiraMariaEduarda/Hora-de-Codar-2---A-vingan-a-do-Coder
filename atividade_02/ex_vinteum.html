@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* Escreva um programa que leia as notas das duas avaliações normais e a nota da avaliação optativa. Calcular a média do semestre considerando que a prova optativa substitui a nota mais baixa entre as duas primeiras avaliações. Escrever a média e mensagens que indiquem se o aluno foi aprovado, reprovado ou está em exame, de acordo com as informações abaixo: */
+
+        var a_01 = parseFloat(prompt("Nota da primeira avaliação"));
+        var a_02 = parseFloat(prompt("Nota da segunda avaliação"));
+        var a_03 = parseFloat(prompt("Nota da avalição opcional"));
+        var soma = 0;
+
+       /* if(a_01 > a_03){
+            soma += a_01
+        }
+
+        if(a_02 > a_03){
+            soma += a_02
+        }
+
+        if(a_03 > a_01){
+            soma += a_03
+        }
+
+
+        if (a_03 > a_02){
+            soma += a_03
+        }*/
+
+        if(a_01 > a_02){
+            if(a_03 > a_02){
+                soma = (a_03 + a_01) / 2 
+            }
+
+            if(a_02 > a_03){
+                soma = (a_02 + a_01) / 2
+            }
+
+        }
+
+        if(a_02 > a_01){
+            if(a_01 > a_03){
+                soma = (a_01 + a_02)/ 2
+            }
+
+            if(a_01 < a_03){
+                soma = (a_02 + a_03)/ 2
+            }
+        }
+
+
+
+        
+
+        alert(soma);
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
